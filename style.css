@@ -1,0 +1,235 @@
+
+
+
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+/* stylelint-disable*/
+a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,caption,center,cite,code,dd,del,details,dfn,div,dl,dt,em,embed,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,output,p,pre,q,ruby,s,samp,section,small,span,strike,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,tt,u,ul,var,video{margin:0;padding:0;border:0;font:inherit;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section{display:block}html{line-height:1}body{line-height:inherit}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:after,blockquote:before,q:after,q:before{content:'';content:none}table{border-collapse:collapse;border-spacing:0}
+/* stylelint-enable */
+
+/* Begin site styles below */
+
+
+
+
+
+
+
+html{
+  font-size: 1em;
+  line-height: 1.125em;
+/**  padding-left: 1.125em;
+*  padding-right: 1.125em;
+*/
+  background-color:#202020;
+}
+
+h1{
+  color:#6666cc;
+  font-size: 2em;
+  line-height: 2.25em;
+  font-family:impact;
+  text-align: center;
+  padding-top: 1.125em;
+}
+h2{
+  color:#8888bb;
+  font-size: 1.625em;
+  line-height: 1.625em;
+  font-family:helvetica;
+  text-align: center;
+  padding-top: .625em;
+}
+p{
+  color:#e4e4e4;
+  font-family: 'Arima Madurai', cursive;
+  font-size: 1em;
+  line-height: 1.125em;
+  padding-top: 1.125em;
+}
+h3{
+  /*padding-left: 1.5em;
+  */
+  text-align:center;
+  padding-top: .875em;
+  color:#9999aa;
+  font-size: 1.375em;
+  line-height: 1.375em;
+  font-family:helvetica;
+}
+h4{
+  /*margin-left:1.375em;
+*/
+  text-align:center;
+  padding-top: .9901em;
+  color:#aaaaff;
+  font-size: 1.2599em;
+  line-height: 1.2599em;
+}
+footer{
+  padding-top: 1.125em;
+  /*padding-left:1em;
+  */
+  clear:both;
+}
+img{
+  display:block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 1em;
+  max-height:31.5em;
+
+}
+.boi{
+  display: table-cell;
+}
+
+.yume-nikki{
+  background-color: #000000;
+  width: 100%;
+  padding-left:1em;
+  padding-right:1em;
+  box-sizing: border-box;
+  display: table;
+}
+#yume p{
+  color:#ffccff;
+}
+#yume h2{
+  color:#eeccee;
+  font-family: 'Coiny', cursive;
+}
+#yume h1{
+  color:#ffeeff;
+  font-family: 'Coiny', cursive;
+}
+#yume h3{
+  color:#ffdfff;
+  font-family: 'Coiny', cursive;
+}
+.meta-games{
+  background-color: #ff8800;
+  width:100%;
+  padding-left:1em;
+  padding-right:1em;
+  box-sizing: border-box;
+  display: table;
+}
+#meta p{
+  color:#000000;
+}
+#meta h1,h2,h3,h4{
+  color:#ffffff;
+  font-family: 'Righteous', cursive;
+}
+.horror-games{
+  background-color: #000000;
+  width:100%;
+  padding-left:1em;
+  padding-right:1em;
+  box-sizing: border-box;
+  display: table;
+}
+#horror p{
+  color:#eeeeee;
+}
+#horror h1,h2,h3,h4{
+  color:#eeeeee;
+  border:none;
+  font-family: 'Carrois Gothic SC', sans-serif;
+}
+#horror figure{
+  color:#ffffff;
+}
+#horror-games figcaption{
+  padding-top: 1.125em;
+}
+@media screen and (min-width: 600px){
+  .yume-nikki{
+    float: left;
+    padding-left:6em;
+    padding-right:6em;
+  }
+  .meta-games{
+    float: left;
+    padding-left:6em;
+    padding-right:6em;
+  }
+  .horror-games{
+    float: left;
+    padding-left:6em;
+    padding-right:6em;
+  }
+  img{
+    max-height: 52.875em;
+  }
+}
+@media screen and (min-width: 1000px){
+  .yume-nikki{
+    float: left;
+    padding-left:10em;
+    padding-right:10em;
+  }
+  .meta-games{
+    float: left;
+    padding-left:10em;
+    padding-right:10em;
+  }
+  .horror-games{
+    float: left;
+    padding-left:10em;
+    padding-right:10em;
+  }
+  img{
+    max-height: 90em;
+  }
+}
+
+video{
+  max-height: 14.625em;
+  max-width: 25.875em;
+  display: block;
+  margin: 0 auto;
+  vertical-align: middle;
+  padding-top: 1.125em;
+  width:100%;
+}
+#footing ul{
+  list-style:none;
+  padding: 0em;
+}
+#footing a:link{
+  color:#eeeeee;
+  background-color: #262626;
+  text-align: center;
+  display: inline-block;
+  width:100%;
+  line-height: 2.25em;
+}
+#footing a:visited{
+  color:#bbbbee;
+}
+#footing a:hover{
+  color:#cf9930;
+  background-color: #111111;
+  cursor:pointer;
+}
+#footing a:active{
+  color:#df9930;
+}
+#footing h3{
+  text-align:center;
+}
+/*
+*It seems like some fonts refuse to be called is it the shared catagory?
+*/
+
+
+
+/*
+* A quick baseline grid overlay using css+svg.
+* Inspired by [Basehold.it](https://basehold.it/).
+* @author leshido
+*/
