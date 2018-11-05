@@ -24,6 +24,9 @@ html{
 *  padding-right: 1.125em;
 */
   background-color:#202020;
+  width: 100%;
+  padding-left:1em;
+  padding-right:1em;
 }
 
 h1{
@@ -85,7 +88,7 @@ img{
 .boi{
   display: table-cell;
 }
-
+/*
 .yume-nikki{
   background-color: #000000;
   width: 100%;
@@ -94,9 +97,10 @@ img{
   box-sizing: border-box;
   display: table;
 }
-#yume p{
-  color:#ffccff;
-}
+
+*#yume p{
+*  color:#ffccff;
+*}
 #yume h2{
   color:#eeccee;
   font-family: 'Coiny', cursive;
@@ -109,6 +113,8 @@ img{
   color:#ffdfff;
   font-family: 'Coiny', cursive;
 }
+*/
+/*
 .meta-games{
   background-color: #ff8800;
   width:100%;
@@ -117,6 +123,7 @@ img{
   box-sizing: border-box;
   display: table;
 }
+
 #meta p{
   color:#000000;
 }
@@ -124,6 +131,8 @@ img{
   color:#ffffff;
   font-family: 'Righteous', cursive;
 }
+*/
+/*
 .horror-games{
   background-color: #000000;
   width:100%;
@@ -132,6 +141,7 @@ img{
   box-sizing: border-box;
   display: table;
 }
+
 #horror p{
   color:#eeeeee;
 }
@@ -140,6 +150,7 @@ img{
   border:none;
   font-family: 'Carrois Gothic SC', sans-serif;
 }
+*/
 #horror figure{
   color:#ffffff;
 }
