@@ -230,9 +230,26 @@ video{
 #footing a:active{
   color:#df9930;
 }
-#footing h3{
-  text-align:center;
+#navigation a:link{
+  color:#eeeeee;
+  background-color: #262626;
+  text-align: center;
+  display: inline-block;
+  width:100%;
+  line-height: 2.25em;
 }
+#navigation a:visited{
+  color:#bbbbee;
+}
+#navigation a:hover{
+  color:#cf9930;
+  background-color: #111111;
+  cursor:pointer;
+}
+#navigation a:active{
+  color:#df9930;
+}
+
 /*
 *It seems like some fonts refuse to be called is it the shared catagory?
 */
