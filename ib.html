@@ -63,12 +63,40 @@
       more character focused narratives most of it is art of the characters.
       Below is a small collection of popular fan art I found online.
         </p>
-        <figure>
-          <img src="ibfanart.jpg" alt="fanart from IB">
-          <figcaption>Ib looking at an image that is a culmination of the entire game
-            here is the <a href="https://www.zerochan.net/1193020"> source</a></figcaption>
-        </figure>
       </article>
+    </section>
+    <section id="images">
+<!--      <figure> -->
+        <img src="ibfanart.jpg" alt="fanart from IB"
+        onclick="openGal();currentSlide(1)" class="hover-shadow">
+<!--
+        <figcaption>Ib looking at an image that is a culmination of the entire game
+          here is the <a href="https://www.zerochan.net/1193020"> source</a></figcaption>
+      </figure>-->
+    </section>
+    <section id="gallery" class="gallary">
+      <span class="close cursor" onclick="closeGal()">&times;</span>
+      <section id="slidecontent">
+        <section id="gallery-content">
+          <section id="mySlides">
+          <!-- make a smaller version of images for column and page images-->
+            <section id="numbertext">1 / 4</section>
+              <img src="ibfanart.jpg" style="width:100%">
+          </section>
+          <section id="captions">
+            <p id="caption">Ib looking at an image that
+              is a culmination of the entire game
+              here is the <a href="https://www.zerochan.net/1193020"> source</a></p>
+            </section>
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+        <!-- Thumbnail image controls -->
+          <section id="column">
+            <img class="demo" src="ibfanart.jpg" onclick="currentSlide(1)" alt="ib">
+          </section>
+        </section>
+      </section>
     </section>
     <footer>
       <section id="footing">
