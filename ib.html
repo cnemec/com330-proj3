@@ -2,6 +2,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <script type="text/javascript" src='javascript.js'> </script>
   <header id="header">
     <nav id="navigation">
       <ul>
@@ -67,33 +68,75 @@
     </section>
     <section id="images">
 <!--      <figure> -->
-        <img src="ibfanart.jpg" alt="fanart from IB"
+        <img src="ibfanartmini.jpg" alt="beautiful fanart from IB"
         onclick="openGal();currentSlide(1)" class="hover-shadow">
+        <img src="ibfanart2mini.jpg" alt="gorgeous fanart from IB"
+        onclick="openGal();currentSlide(2)" class="hover-shadow">
+        <img src="ibfanart3mini.jpg" alt="comedic fanart from IB"
+        onclick="openGal();currentSlide(3)" class="hover-shadow">
+        <img src="ibfanart4mini.jpg" alt="horrific fanart from IB"
+        onclick="openGal();currentSlide(4)" class="hover-shadow">
+        <img src="ibfanart5mini.jpg" alt="comedic fanart from IB"
+        onclick="openGal();currentSlide(5)" class="hover-shadow">
 <!--
         <figcaption>Ib looking at an image that is a culmination of the entire game
           here is the <a href="https://www.zerochan.net/1193020"> source</a></figcaption>
       </figure>-->
     </section>
-    <section id="gallery" class="gallary">
+    <section id="gallery" class="gallery">
       <span class="close cursor" onclick="closeGal()">&times;</span>
       <section id="slidecontent">
         <section id="gallery-content">
           <section id="mySlides">
           <!-- make a smaller version of images for column and page images-->
-            <section id="numbertext">1 / 4</section>
+            <section id="numbertext">1 / 5</section>
               <img src="ibfanart.jpg" style="width:100%">
           </section>
+          <section id="mySlides">
+            <section id="numbertext">2 / 5</section>
+              <img src="ibfanart2.jpg" style="width:100%">
+          </section>
+          <section id="mySlides">
+            <section id="numbertext">3 / 5</section>
+              <img src="ibfanart3.jpg" style="width:100%">
+          </section>
+          <section id="mySlides">
+            <section id="numbertext">4 / 5</section>
+              <img src="ibfanart4.jpg" style="width:100%">
+          </section>
+          <section id="mySlides">
+            <section id="numbertext">5 / 5</section>
+              <img src="ibfanart5.jpg" style="width:100%">
+          </section>
           <section id="captions">
-            <p id="caption">Ib looking at an image that
+            <!-- <p id="caption">Ib looking at an image that
               is a culmination of the entire game
               here is the <a href="https://www.zerochan.net/1193020"> source</a></p>
+-->
             </section>
           <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
           <a class="next" onclick="plusSlides(1)">&#10095;</a>
 
         <!-- Thumbnail image controls -->
           <section id="column">
-            <img class="demo" src="ibfanart.jpg" onclick="currentSlide(1)" alt="ib">
+            <img class="demo" src="ibfanartmini.jpg" onclick="currentSlide(1)"
+            alt="ib looking at her story">
+          </section>
+          <section id="column">
+            <img class="demo" src="ibfanart2mini.jpg" onclick="currentSlide(2)"
+             alt="ib">
+          </section>
+          <section id="column">
+            <img class="demo" src="ibfanart3mini.jpg" onclick="currentSlide(3)"
+             alt="ib">
+          </section>
+          <section id="column">
+            <img class="demo" src="ibfanart4mini.jpg" onclick="currentSlide(4)"
+             alt="ib">
+          </section>
+          <section id="column">
+            <img class="demo" src="ibfanart5mini.jpg" onclick="currentSlide(5)"
+             alt="ib">
           </section>
         </section>
       </section>

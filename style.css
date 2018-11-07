@@ -174,7 +174,7 @@ img{
     padding-right:6em;
   }
   img{
-    max-height: 52.875em;
+    max-width: 30em;
   }
 }
 @media screen and (min-width: 1000px){
@@ -194,7 +194,7 @@ img{
     padding-right:10em;
   }
   img{
-    max-height: 90em;
+    max-width: 50em;
   }
 }
 
@@ -285,6 +285,7 @@ video{
 }
 .prev,
 .next {
+  display: none;
   cursor: pointer;
   position: absolute;
   top: 50%;
@@ -315,6 +316,9 @@ video{
   background-color: black;
   padding: 2px 16px;
   color: white;
+}
+.hover-shadow:hover {
+  box-shadow: 0 4px 8px 0 rgba(200, 200, 200, 0.2), 0 6px 20px 0 rgba(200, 200, 200, 1.19);
 }
 /*
 *It seems like some fonts refuse to be called is it the shared catagory?
