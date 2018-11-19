@@ -1,4 +1,4 @@
-<script>
+
   function openGal(){
     document.getElementById('gallery').style.display="block";
   }
@@ -30,4 +30,3 @@ slides[slideIndex-1].style.display = "block";
 dots[slideIndex-1].className += " active";
 captionText.innerHTML = dots[slideIndex-1].alt;
 }
-</script>
