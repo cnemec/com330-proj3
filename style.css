@@ -82,7 +82,7 @@ img{
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 1em;
-  max-height:31.5em;
+  max-width:80%;
 
 }
 .boi{
@@ -174,7 +174,7 @@ img{
     padding-right:6em;
   }
   img{
-    max-width: 30em;
+    max-width: 80%;
   }
 }
 @media screen and (min-width: 1000px){
@@ -194,7 +194,7 @@ img{
     padding-right:10em;
   }
   img{
-    max-width: 50em;
+    max-width: 80%;
   }
 }
 
@@ -213,6 +213,7 @@ video{
 }
 #footing a:link{
   color:#eeeeee;
+  text-decoration: none;
   background-color: #262626;
   text-align: center;
   display: inline-block;
@@ -231,6 +232,7 @@ video{
   color:#df9930;
 }
 #navigation a:link{
+  text-decoration: none;
   color:#eeeeee;
   background-color: #262626;
   text-align: center;
@@ -317,6 +319,11 @@ video{
   padding: 2px 16px;
   color: white;
 }
+.column {
+  float: left;
+  width: 20%;
+}
+
 .hover-shadow:hover {
   box-shadow: 0 4px 8px 0 rgba(200, 200, 200, 0.2), 0 6px 20px 0 rgba(200, 200, 200, 1.19);
 }
