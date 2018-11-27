@@ -196,6 +196,9 @@ img{
   img{
     max-width: 80%;
   }
+  .gallery .images li {
+  flex: 1 0 350px;
+}
 }
 
 video{
@@ -251,79 +254,16 @@ video{
 #navigation a:active{
   color:#df9930;
 }
-.gallery {
-  display: none;
-  position: fixed;
-  z-index: 1;
-  padding-top: 100px;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  overflow: auto;
-  background-color: black;
+.gallery .images {
+  background: #222;
+  display: block;
 }
-.gallery-content {
-  position: relative;
-  background-color: #fefefe;
-  margin: auto;
-  padding: 0;
-  width: 90%;
-  max-width: 1200px;
-}
-.close {
-  color: white;
-  position: absolute;
-  top: 10px;
-  right: 25px;
-  font-size: 35px;
-  font-weight: bold;
-}
-.mySlides {
+.slideshow li {
   display: none;
 }
-.mySlides {
-  display: none;
+.slideshow li.is-showing {
+  display: block;
 }
-.prev,
-.next {
-  display: none;
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  padding: 16px;
-  margin-top: -50px;
-  color: white;
-  font-weight: bold;
-  font-size: 20px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-  -webkit-user-select: none;
-}
-.next {
-  right: 0;
-  border-radius: 1em 0 0 1em;
-}
-.numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
-}
-.captions {
-  text-align: center;
-  background-color: black;
-  padding: 2px 16px;
-  color: white;
-}
-.column {
-  float: left;
-  width: 20%;
-}
-
 .hover-shadow:hover {
   box-shadow: 0 4px 8px 0 rgba(200, 200, 200, 0.2), 0 6px 20px 0 rgba(200, 200, 200, 1.19);
 }

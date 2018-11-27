@@ -1,33 +1,44 @@
+(function(){
+  if (typeof document.querySelector === 'undefined') {
+    return; // be kind to old browsers and get out
+  }
+  var slideshow = document.querySelector('.gallery');
+  // Replace the gallery class with slideshow
+  slideshow.className = 'slideshow';
+  var figcaption = slideshow.querySelector('figcaption');
+  figcaption.innerHTML += '<b>Click or tap image to see more images.</b>';
+  // Grab all the slides -- that is, the list items
+  var slides = slideshow.querySelectorAll('li');
+  console.log(slides.length, 'slides');
 
-  function openGal(){
-    document.getElementById('gallery').style.display="block";
+  slides[0].className = 'is-showing';
+
+  // Create the next_slide stepper function from cycle(), defined below
+  var next_slide = cycle(slides);
+  var old_slide = slides[0];
+
+  slideshow.addEventListener('click', function(e){
+    old_slide.className = ''; // remove is-showing from old slide
+    var slide = next_slide();
+    slide.className = 'is-showing';
+    old_slide = slide;
+  })
+
+  // Function to cycle endlesslyl through an array;
+  function cycle(arr) {
+    var max_index = arr.length - 1;
+    var current_index = 0;
+    return function() {
+      // increment the index by 1
+      current_index++;
+      // if the index is bigger than 1, reset to 0
+      if (current_index > max_index) {
+        current_index = 0;
+      }
+      var item = arr[current_index];
+      return item;
+    }
   }
-  function closeGal(){
-    document.getElementById('gallery').style.display="none";
-  }
-  var slider = 1;
-  showSlides(slider);
-  function moveSlides(n){
-    showSlides(slider+=n);
-  }
-  function currentSlide(n) {
-    slider = n;
-    showSlides(n);
-}
-function showSlides(n) {
-var i;
-var slides = document.getElementsByClassName("mySlides");
-var dots = document.getElementsByClassName("demo");
-var captionText = document.getElementById("caption");
-if (n > slides.length) {slideIndex = 1}
-if (n < 1) {slideIndex = slides.length}
-for (i = 0; i < slides.length; i++) {
-  slides[i].style.display = "none";
-}
-for (i = 0; i < dots.length; i++) {
-  dots[i].className = dots[i].className.replace(" active", "");
-}
-slides[slideIndex-1].style.display = "block";
-dots[slideIndex-1].className += " active";
-captionText.innerHTML = dots[slideIndex-1].alt;
-}
+
+
+})();
