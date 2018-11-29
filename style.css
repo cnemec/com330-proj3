@@ -259,6 +259,9 @@ video{
   position:relative;
   display: none;
 }
+#galleryset img{
+  max-width: 80%;
+}
 .closebtn {
     position: absolute;
     top: 1em;
