@@ -196,9 +196,6 @@ img{
   img{
     max-width: 80%;
   }
-  .gallery .images li {
-  flex: 1 0 350px;
-}
 }
 
 video{
@@ -254,15 +251,27 @@ video{
 #navigation a:active{
   color:#df9930;
 }
-.gallery .images {
-  background: #222;
-  display: block;
+#images img{
+  cursor: pointer;
 }
-.slideshow li {
+#galleryset{
+  position:relative;
   display: none;
 }
-.slideshow li.is-showing {
-  display: block;
+#imgtext {
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    color: white;
+    font-size: 20px;
+}
+.closebtn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    color: white;
+    font-size: 35px;
+    cursor: pointer;
 }
 .hover-shadow:hover {
   box-shadow: 0 4px 8px 0 rgba(200, 200, 200, 0.2), 0 6px 20px 0 rgba(200, 200, 200, 1.19);

@@ -69,38 +69,24 @@
     <section id="images">
 <!--      <figure> -->
       <img src="ibfanartmini.jpg" alt="beautiful fanart from IB"
-        class="hover-shadow">
+        class="hover-shadow" onclick="opengal(this);">
       <img src="ibfanart2mini.jpg" alt="gorgeous fanart from IB"
-        class="hover-shadow">
+        class="hover-shadow" onclick="opengal(this);">
       <img src="ibfanart3mini.jpg" alt="comedic fanart from IB"
-        class="hover-shadow">
+        class="hover-shadow" onclick="opengal(this);">
       <img src="ibfanart4mini.jpg" alt="horrific fanart from IB"
-        class="hover-shadow">
+        class="hover-shadow" onclick="opengal(this);">
       <img src="ibfanart5mini.jpg" alt="comedic fanart from IB"
-        class="hover-shadow">
-      <figure class = "gallery">
-        <ul class ="images">
-          <li>
-        <img src="ibfanart.jpg" alt="beautiful fanart from IB">
-          </li>
-          <li>
-        <img src="ibfanart2.jpg" alt="gorgeous fanart from IB">
-          </li>
-          <li>
-        <img src="ibfanart3.jpg" alt="comedic fanart from IB">
-      </li>
-          <li>
-        <img src="ibfanart4.jpg" alt="horrific fanart from IB">
-      </li>
-          <li>
-        <img src="ibfanart5.jpg" alt="comedic fanart from IB">
-      </li>
-    </ul>
-      </figure>
+        class="hover-shadow" onclick="opengal(this);">
 <!--
         <figcaption>Ib looking at an image that is a culmination of the entire game
           here is the <a href="https://www.zerochan.net/1193020"> source</a></figcaption>
       </figure>-->
+    </section>
+    <section id="galleryset">
+      <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+      <img id="expandedImg" style="width:100%">
+      <p id="imgtext"></p>
     </section>
       <section id="footing">
         <article class="footing">
