@@ -253,6 +253,7 @@ video{
 }
 #images img{
   cursor: pointer;
+  max-width: 50%;
 }
 #galleryset{
   position:relative;
@@ -267,10 +268,10 @@ video{
 }
 .closebtn {
     position: absolute;
-    top: 10px;
-    right: 15px;
+    top: 1em;
+    right: 1.125em;
     color: white;
-    font-size: 35px;
+    font-size: 3em;
     cursor: pointer;
 }
 .hover-shadow:hover {
