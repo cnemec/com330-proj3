@@ -1,6 +1,5 @@
 function opengal(images){
   var expandimg = document.getElementById("expandedImg");
-  var imgText = document.getElementById("imgtext");
   if(images.src = "ibfanartmini.jpg"){
     expandimg.src = "ibfanart.jpg";
   }
@@ -16,6 +15,5 @@ function opengal(images){
   else if(images.src = "ibfanartmini5.jpg"){
     expandimg.src = "ibfanart5.jpg";
   }
-  imgText.innerHTML = images.alt;
   expandimg.parentElement.style.display = "block";
 }
